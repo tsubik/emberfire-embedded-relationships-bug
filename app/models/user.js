@@ -4,5 +4,5 @@ import { belongsTo } from "ember-data/relationships";
 
 export default Model.extend({
   name: attr("string"),
-  event: belongsTo("event", { async: true })
+  event: belongsTo("event")
 });
