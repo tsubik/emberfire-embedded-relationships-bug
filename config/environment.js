@@ -5,7 +5,10 @@ module.exports = function(environment) {
     modulePrefix: 'emberfire-embedded-relations-bug',
     environment: environment,
     contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
-    firebase: 'https://blistering-inferno-1892.firebaseio.com/',
+    firebase: {
+      apiKey: "AIzaSyBwTVVb4tpBrphTCtOi1mqquBLix04Z58k",
+      databaseURL: "https://emberfire-bug.firebaseio.com",
+    },
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
